@@ -1,0 +1,23 @@
+# Brave Search Research Agent - Python Dependencies
+
+# Core PydanticAI framework
+pydantic-ai
+
+# HTTP client for API requests
+httpx
+
+# Rate limiting for API compliance
+aiolimiter
+
+# Configuration management
+pydantic-settings
+python-dotenv
+
+# Development and testing dependencies
+pytest
+pytest-asyncio
+
+# Optional: Enhanced development tools
+# pytest-cov  # For code coverage
+# black       # Code formatting
+# ruff        # Linting
