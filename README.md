@@ -1,15 +1,27 @@
-# 🚀 Full Guide to Using Claude Code
+# Claude Code Masterclass
 
-Everything you need to know to crush building anything with Claude Code! This guide takes you from installation through advanced context engineering, subagents, hooks, and parallel agent workflows.
+> **A comprehensive guide to mastering Claude Code from installation to advanced workflows**
 
-## 📋 Prerequisites
+Everything you need to know to build anything with Claude Code! This guide takes you from installation through advanced context engineering, subagents, hooks, and parallel agent workflows.
 
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [Core Features](#core-features)
+- [Advanced Techniques](#advanced-techniques)
+- [Examples & Use Cases](#examples--use-cases)
+- [Command Reference](#command-reference)
+- [Resources](#resources)
+
+## Quick Start
+
+### Prerequisites
 - Terminal/Command line access
 - Node.js installed (for Claude Code installation)
 - GitHub account (for GitHub CLI integration)
 - Text editor (VS Code recommended)
 
-## 🔧 Installation
+### Installation
 
 **macOS/Linux:**
 ```bash
@@ -24,9 +36,17 @@ See detailed instructions in [install_claude_code_windows.md](./install_claude_c
 claude --version
 ```
 
+### Get Started in 60 Seconds
+1. Create a new project: `mkdir my-project && cd my-project`
+2. Start Claude: `claude`
+3. Initialize project context: `/init`
+4. Start building! 🚀
+
 ---
 
-## ✅ TIP 1: CREATE AND OPTIMIZE CLAUDE.md FILES
+## Core Features
+
+### 1. Context Engineering with CLAUDE.md Files
 
 Set up context files that Claude automatically pulls into every conversation, containing project-specific information, commands, and guidelines.
 
@@ -42,15 +62,15 @@ Use the built-in command:
 
 Or create your own CLAUDE.md file based on the template in this repository. See `CLAUDE.md` for a Python specific example structure that includes:
 - Project awareness and context rules
-- Code structure guidelines
+- Code structure guidelines  
 - Testing requirements
 - Task completion workflow
 - Style conventions
 - Documentation standards
 
-### Advanced Prompting Techniques
+#### Advanced Prompting Techniques
 
-**Power Keywords**: Claude responds to certain keywords with enhanced behavior (information dense keywords):
+**Power Keywords**: Claude responds to certain keywords with enhanced behavior:
 - **IMPORTANT**: Emphasizes critical instructions that should not be overlooked
 - **Proactively**: Encourages Claude to take initiative and suggest improvements
 - **Ultra-think**: Can trigger more thorough analysis (use sparingly)
@@ -61,7 +81,7 @@ Or create your own CLAUDE.md file based on the template in this repository. See 
 - Avoid backward compatibility unless specifically needed - Claude tends to preserve old code unnecessarily
 - Focus on clarity and specific requirements rather than vague quality descriptors
 
-### File Placement Strategies
+#### File Placement Strategies
 
 Claude automatically reads CLAUDE.md files from multiple locations:
 
@@ -84,11 +104,7 @@ echo "Follow best practices in: ~/company/engineering-standards.md" > CLAUDE.md
 - Update standards without changing every project
 - Share best practices across teams
 
-*Note: While Claude Code reads CLAUDE.md automatically, other AI coding assistants can use similar context files (such as .cursorrules for Cursor)*
-
----
-
-## ✅ TIP 2: SET UP PERMISSION MANAGEMENT
+### 2. Permission Management
 
 Configure tool allowlists to streamline development while maintaining security for file operations and system commands.
 
